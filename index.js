@@ -8,12 +8,17 @@ if (is_correct_check&&is_correct_check1){
     if(is_correct_khongdat){
         alert("Khong dat")
     }
-    else  if(is_correct_dat) {
-        alert("Dat");
-    }
+    else   {
+        if(is_correct_dat){
+            alert("Dat");
+        }
+        
+    
             else{
             alert("Tot");
-                          }              }
+            }              
+    }
+}
     
 
 else{
