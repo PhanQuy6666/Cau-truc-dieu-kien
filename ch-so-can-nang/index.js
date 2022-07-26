@@ -16,7 +16,44 @@ else{
     else{
         var bmi = cannang / (chieucao ^ 2);
     document.getElementById("result").innerText = "BMI cua ban la :" + bmi;
-        
+        if (bmi < 16){
+            document.getElementById("result2").innerHTML = "Bạn đang Gầy độ III";
+        }
+        else{
+            if (bmi <17){
+                document.getElementById("result2").innerHTML = "Bạn đang Gầy độ II";
+            }
+            else{
+                if (bmi <18.5){
+                    document.getElementById("result2").innerHTML = "Bạn đang Gầy độ I";
+                }
+                else{
+                    if (bmi <25){
+                        document.getElementById("result2").innerHTML = "Bạn có chỉ số bình thường";
+                    }
+                    else{
+                        if (bmi <30){
+                            document.getElementById("result2").innerHTML = "Bạn đang Thừa cân đó nha";
+                        }
+                        else{
+                            if (bmi <35){
+                                document.getElementById("result2").innerHTML = "Bạn đang Thừa cân độ I";
+                            }
+                            else{
+                                if (bmi <40){
+                                    document.getElementById("result2").innerHTML = "Bạn đang Thừa cân độ II";
+                                }
+                                else{
+                                    document.getElementById("result2").innerHTML = "Bạn đang béo phì độ III";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }    
     }
 }
+
 
